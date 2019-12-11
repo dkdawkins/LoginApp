@@ -6,6 +6,6 @@ Registering a new user into a MySQL database using First and Last names, email, 
 Logging in with a valid email and password, bringing users to a simple HTML page;
 Links to navigate between pages.
 
-To use the app, run it in an IDE (I used Eclipse) and in a browser go to the url "http://localhost:8090/login".
+The app contains a .war file that can be run using a Tomcat server; this can also be done through the Eclipse IDE, which is how I'm able to run it. After running the app, open a browser and go to the url "http://localhost:8090/login".
 
 In addition to Wasankar's code, I attempted to set up a password recovery system which uses the security question and answer a user provided during registration. A password recovery page is accessible, but isn't fully functional. This framework relies on a couple foreign key constraints during the authentication process and doesn't provide access to them in the code; because of this, I couldn't find a way to modify existing user data without refactoring a large part of the code. With more time, I would either re-work the authentication process or find a way to access and modify the foreign keys in code.
